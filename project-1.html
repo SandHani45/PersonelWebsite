@@ -1,0 +1,57 @@
+<div class="block-content">
+    <div class="project-head">
+        <h1 class="block-title">Single Project - Company Portfolio </h1>
+        <div class="tags"><span>Client : </span> Krackerz 360 Degree Pvt Ltd </div>
+        <div class="tags"><span>Completion : </span> Dec 2016</div>
+        <div class="tags"><span>Skils : </span> HTML5,CSS3,BOOTSTRAP,JAVASCRIPT</div>
+        <div class="tags"><span>Website : </span> <a href="http://krackerz.in/">krackerz.in</a> </div>
+    </div>
+    <p class="project-description">
+        It all started with crackers bursting on a fine morning of August, 2015. The sound owned a place in our brains and we came up with Krackerz. Spontaneous and interesting, isn't it? We slowly achieved our mission to make a mark in the advertising industry with a loud noise which stands out from 'noise'. 
+        
+        Currently, we are a group of hardworking quirky people who will understand your needs as a brand. We serve all our clients with great enthusiasm. This passion to create something 'extraordinary' is in our blood and we will not settle for the ordinary stuff (bear with us). Our hatred towards mediocrity won us clients like Airtel, Radio Mirchi, Ola, Prathigna.com, Carl Zeiss, Prestige TTK, The Old Lodge Malton, Mahaveer Group, Century Real Estate and the list goes on... </p>
+    <div class="project-media row">
+        <div class="col-md-12">
+            <img src="images/portfolio/krackerz.PNG" alt="" />
+        </div>
+        <div class="col-md-6">
+            <img src="images/portfolio/kracker2.PNG" alt="" />
+            
+        </div>
+        <div class="col-md-6">
+            <img src="images/portfolio/kracker3.PNG" alt="" />
+        </div>
+       
+    </div>
+    <div class="project-nav text-center">
+        <span class="float-left">
+            <a class="open-project" href="project-6.html">&leftarrow; Previous Project</a>
+        </span>
+        <span class="">
+            <a id="close-project" href="#"><i class="ion-grid"></i></a>
+        </span>
+        <span class="float-right">
+            <a class="open-project" href="project-2.html">Next Project &rightarrow; </a>
+        </span>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col-md-12 btn-email">
+        <a class="btn lowercase">sandhani.sk45@gmail.com</a>
+    </div>
+</div>
+
+<script>
+    $('.open-project').on('click', function() {
+        var projectUrl = $(this).attr("href");
+        $('.inline-menu-container').removeClass('showx');
+        $('.content-blocks.pop').addClass('showx');
+        $('.content-blocks.pop section').load(projectUrl)
+        return false;
+    });
+    $('#close-project').on('click', function() {
+        $('.content-blocks.pop').removeClass('showx');
+        $('.inline-menu-container').addClass('showx');
+        $('.content-blocks.pop section').empty();
+    });
+</script>

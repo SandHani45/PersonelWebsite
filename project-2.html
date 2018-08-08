@@ -1,0 +1,54 @@
+<div class="block-content">
+    <div class="project-head">
+        <h1 class="block-title">Job Portals Website</h1>
+        <div class="tags"><span>Client : </span> Prathigna</div>
+        <div class="tags"><span>Completion : </span> Jan 2017</div>
+        <div class="tags"><span>Role : </span> Web Developer</div>
+        <div class="tags"><span>Skills : </span> HTML5,CSS3,BOOTSTRAP,JQuery,PHP,LARAVEL,MYSQL </div>
+        <div class="tags"><span>Website : </span> <a href="http://www.prathigna.com/">prathigna.com</a> </div>
+    </div>
+    <p class="project-description">Prathigna.com is a new entrepreneurial online based Job board company, established in Bangalore, on August 2015. We are an e-recruitment solution providers who have a passion for making the recruitment process simple and effective without any ambiguity.
+        We focus on bridging the gap between aspiring Job Seekers and Potential Recruiters. We cater to the users’ needs with our free services and also enrich with our paid services that assures success. We serve on an online platform for Job Seekers, Recruiters and other third party clients. On a single platform we provide free registration, profile upload and Profile management, job options for Job Seekers.  We assist Recruiters through all stages of recruiting an ideal candidate as per the requirement.  We administer both Job Seekers and Recruiters round the clock and make them get what they preferred at the right moment.
+
+        Prathigna.com believes in innovation and crediblity in delivering the service. We work around with the latest online and mobile media technologies available in the trend rendering service to the end user. The work flow is technically designed in such a way that it works without any flaws and provide the best results.
+        </p>
+        <div class="project-media row">
+            <div class="col-md-6">
+                <img src="images/portfolio/prathigna.PNG" alt="" />
+            </div>
+            <div class="col-md-6">
+                <img src="images/portfolio/prathigna2.PNG" alt="" />
+            </div>
+        </div>
+    <div class="project-nav text-center">
+        <span class="float-left">
+            <a class="open-project" href="project-1.html">&leftarrow; Previous Project</a>
+        </span>
+        <span class="">
+            <a id="close-project" href="#"><i class="ion-grid"></i></a>
+        </span>
+        <span class="float-right">
+            <a class="open-project" href="project-3.html">Next Project &rightarrow; </a>
+        </span>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col-md-12 btn-email">
+        <a class="btn lowercase">shout@james.com</a>
+    </div>
+</div>
+
+<script>
+    $('.open-project').on('click', function() {
+        var projectUrl = $(this).attr("href");
+        $('.inline-menu-container').removeClass('showx');
+        $('.content-blocks.pop').addClass('showx');
+        $('.content-blocks.pop section').load(projectUrl)
+        return false;
+    });
+    $('#close-project').on('click', function() {
+        $('.content-blocks.pop').removeClass('showx');
+        $('.inline-menu-container').addClass('showx');
+        $('.content-blocks.pop section').empty();
+    });
+</script>
